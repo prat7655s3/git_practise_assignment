@@ -1,13 +1,18 @@
 Hey Suraj 
 // code for checking prime no N 
-let c = 0;
-for(let i =0 ; i<=N ; i++) {
- if((N%i)==0) {
-c++;
-}
-if(c==2){
-console.log("Prime");
-}
-else {
-console.log("Not Prime");
-}
+    let factor=0;
+    bag=0;
+    for(i=0; i<=num; i++){
+        if(num%i==0){
+         bag = bag +i;
+            factor++
+        }
+    } 
+        if(factor==2)
+    {
+        console.log("Yes");
+    } 
+    else 
+    {
+        console.log("No")
+    }
